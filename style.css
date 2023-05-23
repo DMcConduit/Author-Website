@@ -1,0 +1,703 @@
+
+.page_header{
+    color:#6f2dbd;
+}
+
+/* ***** Animation ******** */
+
+
+@keyframes nav_header {
+    from {color: #6f2dbd;} 
+    to {color: #56CFE1}
+    
+}
+
+
+@keyframes h1 {
+    from {color: #56CFE1;} 
+    to {color: #6f2dbd}
+    
+
+}
+
+@keyframes bio_h1 {
+    from {color: #6f2dbd;} 
+    to {color: #ffffff}
+    
+}
+
+
+
+
+
+h1{
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    color: #6f2dbd;
+    animation: h1; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    
+}
+
+.bio_h1{
+    color: #ffffff;
+    animation: bio_h1; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+body {
+    background-color: #56CFE1;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+h4{
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+p, td{
+    font-family: 'Cormorant Garamond', serif; 
+}
+
+/* image sizes */
+.book_img {
+    width:225px;  
+}
+
+
+
+/* links */
+a{
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* navigation bar */
+
+
+.nav_header {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    display: inline;
+    color: #6f2dbd;
+    padding: 0 10px 10px 14px;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    
+    
+    
+}
+
+.nav_header a:link {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    display: inline;
+    color: #6f2dbd;
+    padding: 0 10px 10px 14px;
+    animation-name: nav_header;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+.nav_header a:hover:not(.active) {
+    background-color: #e2f5f3;
+    color:#56CFE1;
+    
+}
+
+.nav_header link:hover{
+    color: #56CFE1;
+    
+}
+
+/* horizontal rows */
+
+.nav_hr_top {
+    background-color: #56CFE1;
+    height: 2px;
+    border: none;
+    width: 100%;
+    margin: 15px 0px 80px 0px;
+
+}
+
+
+.nav_hr_top:hover {
+    background-color: #B298DC;
+} 
+
+
+.mid_hr{
+    background-color: #56CFE1;
+    height: 2px;
+    border: none;
+    width: 50%;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.mid_hr:hover{
+    background-color: #B298DC;
+}
+
+.nav_hr_bottom {
+    background-color: #56CFE1;
+    height: 2px;
+    border: none;
+    width: 100%;
+    margin: 80px 0px 40px 0px;
+
+}
+
+.nav_hr_bottom:hover {
+
+    background-color: #B298DC;
+    
+}
+
+/* body container*/
+
+.container{
+    background-color: #e2f5f3;
+    padding: 30px;
+    margin: 30px;
+}
+
+/*bottom page author bio*/
+
+.bio_container{
+    background-color: #B298DC;
+    margin: 0 auto;
+    width: 95%;
+    padding-bottom: 25px;
+    
+}
+
+.bio_h1_container {
+    color: white;
+}
+
+.bio_table {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio_td {
+    width: 450px;
+    color: white;
+}
+
+.bio_button {
+    background-color: #56CFE1;
+}
+
+.bio_table_img{
+    display: block;
+    width: 400px;
+    float: right;
+    
+}
+
+
+
+.buy_book_link{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    color: #56CFE1;
+    width: 400px;
+    
+    
+    
+}
+
+.buy_book_link a:link{
+    text-decoration: none;
+    color: #56CFE1;
+    
+}
+
+.buy_book_link a:visited{
+    text-decoration: none;
+}
+
+.buy_book_link a:active{
+    text-decoration: none;
+    color: #56CFE1;
+   
+}
+
+.buy_book_link a:hover{
+    color:#56CFE1;
+    
+}
+
+.book_link_title a{
+    font-family: 'Homemade Apple', cursive; 
+    animation: h1; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.book_link_title a:link{
+    text-decoration: none;
+}
+
+.book_link_title a:visited {
+    text-decoration: none;
+}
+
+.book_link_title a:active{
+    text-decoration: none;
+}
+
+.book_link_title a:hover{
+    color:#56CFE1;
+}
+    
+
+/*   */
+
+
+
+
+button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 14px 40px;
+    margin: 10px;
+    color: #B298DC;
+    background-color:#B298DC;;
+    border-radius: 12px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition: width 2s;
+    
+    
+}
+
+button a{
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: width 2s ease-in;
+    
+    
+
+}
+
+
+button a:hover {
+    background: #6f2dbd;
+    color: #56CFE1;
+    width: 95%;
+    
+}
+
+button:hover {
+    background: #6f2dbd;
+    width: 80%;
+    
+    
+
+}
+
+
+
+/* table - homepage*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+td {
+    padding-left: 55px;
+    padding-right: 55px;
+} 
+
+.book_title {
+    padding-top: 10px;
+}
+
+
+.td_book{
+    padding-bottom: 15px;
+
+}
+
+.td_img {
+    padding: 0px 50px;
+}
+
+
+  table td{
+    text-align: center;
+    width: 110px;
+    word-wrap: break-word;
+    border-spacing: 55px;
+}
+
+
+table th {
+    text-align: center;
+
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* Navigation Bar */
+
+.topnav {
+    overflow: hidden;
+    height: 80px;
+    font-family: 'Oswald', sans-serif;
+    
+  }
+
+.topnav a {
+    float: left;
+    border-radius: 12px;
+    color: #B298DC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.topnav a:hover {
+    background: #4ea8de;
+    border-radius: 12px;
+}
+
+.topnav-right {
+    float: right;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 18px;
+    background-color: #e2f5f3;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a background color to navbar links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #56CFE1;
+  }
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+
+}    
+    /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #6f2dbd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Dropdown content (hidden by default) */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #6f2dbd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #B298DC;
+    color: #6f2dbd;
+
+  }
+
+  .dropbtn:hover {
+    color: #6f2dbd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* container for about books and author */  
+
+.about_container{
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 25px;
+}  
+
+.about_column{
+    float: left;
+    background-color: white;
+    width: 50%;
+    height: 505px;
+}
+
+#book_col{
+    height: 530px;
+}
+
+#book_col_2{
+    float: left;
+    background-color: white;
+    width: 50%;
+    height: 563px;
+    margin-bottom: 20px;
+}
+
+
+
+.bio_column{
+    float: left;
+    background-color: white;
+    width: 50%;
+    height: 600px;
+}
+
+.buy_col{
+    float: left;
+    background-color: white;
+    width: 50%;
+    height: 533px;
+
+}
+
+.buy_col_2{
+    float: left;
+    background-color: white;
+    width: 50%;
+    height: 560px;
+
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}  
+
+/* form */
+form{
+    display: table;
+    margin:auto;
+}
+
+.form-row{
+    display: table;
+
+}
+
+.form-field{
+    display: table-cell;
+    padding: 10px;
+}
+
+.form-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 14px 40px;
+    margin: 10px;
+    background-color: #B298DC;
+    color: white;
+    border-radius: 12px;
+}
+
+
+
+.form-button a:hover {
+    background-color: #6f2dbd;
+    color: #56CFE1;
+}
+
+.form-button:hover {
+    background-color: #6f2dbd;
+
+}
+
+
+
+
+
+/* ********     Responsiveness     ***** */
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+    .book_img{
+        width: 300px;
+    }
+
+    .bio_table{
+        display: block;
+    }
+
+    .bio_table_img{
+        width: 300px;
+    }
+
+    .bio_td {
+        width: 300px;
+        color: white;
+    }
+
+   
+    
+}
+
+@media screen and (max-width: 899px) and (min-width: 700px) {
+    .book_img{
+        width: 200px;
+    }
+    
+    .bio_table_img{
+        width: 200px;
+    }
+
+    .bio_td {
+        display: table-row;
+        width: 200px;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }    
+   
+
+
+}
+
+@media screen and (max-width: 699px) and (min-width: 480px)  {
+    .bio_td {
+        display: block;
+        width: 125px;
+        float:left;
+        clear: left;
+    
+    }
+
+    .bio_table_img{
+        width: 100px;
+    }
+
+    .book_img{
+        width: 100px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 479px) {
+
+    .bio_td {
+        display: block;
+        width: 125px;
+        float:left;
+        clear: left;
+    
+    }
+
+    .bio_table_img{
+        width: 100px;
+    }
+
+    .book_img{
+        width: 100px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  
