@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Homemade+Apple&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Denise McConduit</title>
+</head>
+<body>
+    <div class="container"> 
+
+        <!--- nav bar-->
+        <div class="topnav">
+            <h1 class="nav_header"><a style="color: #6f2dbd;" href="index.html">Denise McConduit</a></h1> 
+            
+            <div class="topnav-right">
+                <div class="dropdown">
+                    <button class="dropbtn animate__animated animate__fadeInUp animate__slow 1s" style="color: #B298DC;">Books
+                      <i class="books_dropbtn"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="dj_zulu_parade.html">DJ and the Zulu Parade</a>
+                      <a href="dj_jazz_fest.html">DJ and the Jazz Fest</a>
+                      <a href="dj_deb_ball.html">DJ and the Debutante Ball</a>
+                      <a href="boy_who_wouldnt_read.html">The Boy and Who Wouldn't Read</a>
+                    </div>
+                </div>
+                <a class="animate__animated animate__fadeInUp animate__slow 1s" href="about.html">About</a>
+                <a class="animate__animated animate__fadeInUp animate__slow 1s" href="bookings.html" style="background-color: #6f2dbd; color:#ffffff;">Bookings</a>
+                <a class="animate__animated animate__fadeInUp animate__slow 1s" href="contact.html">Contact</a>
+                <a class="animate__animated animate__fadeInUp animate__slow 1s" href="buy.html">Buy</a>
+            </div>    
+        </div>
+        <hr class="nav_hr_top">
+
+        <h1>Request a Booking</h1>
+
+        <!--Booking Form-->
+
+        <div class="form_container">
+            <form class="booking_form" action="action_page.php"  method="post" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label class="inline-fields" for="name">Contact Name</label><br>
+                        <input type="text" id="name" name="name" style="width:500px;" required><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="inline-fields" for="organization">Organization</label><br>
+                        <input type="text" id="organization" name="organization" style="width:500px;">
+                    </div>      
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="street address">Street Address</label><br>
+                        <input type="text" id="street address" name="street address" style="width:500px;" required><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="street address optional">Apt, Suite, Bldg. (optional)</label><br>
+                        <input type="text" id="street adress optional" name="street adress optional" style="width:500px;"><br>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" style="width:300px;" required><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="state">State</label><br>
+                        <select id="state" name="state">
+                            <option value=" "></option>
+                            <option value="alabama">AL</option>
+                            <option value="alaska">AK</option>
+                            <option value="arizona">AZ</option>
+                            <option value="arkansas">AK</option>
+                            <option value="american samoa">AS</option>
+                            <option value="california">CA</option>
+                            <option value="colorado">CO</option>
+                            <option value="connecticut">CT</option>
+                            <option value="delaware">DE</option>
+                            <option value="district of columbia">DC</option>
+                            <option value="florida">FL</option>
+                            <option value="georgia">GA</option>
+                            <option value="guam">GU</option>
+                            <option value="hawaii">HI</option>
+                            <option value="idaho">ID</option>
+                            <option value="illinois">IL</option>
+                            <option value="indiana">IN</option>
+                            <option value="iowa">IA</option>
+                            <option value="kansas">KS</option>
+                            <option value="kentucky">KY</option>
+                            <option value="louisiana">LA</option>
+                            <option value="maine">ME</option>
+                            <option value="maryland">MD</option>
+                            <option value="massachusetts">MA</option>
+                            <option value="michigan">MI</option>
+                            <option value="minnesota">MN</option>
+                            <option value="mississippi">MS</option>
+                            <option value="missouri">MO</option>
+                            <option value="montana">MT</option>
+                            <option value="nebraska">NE</option>
+                            <option value="nevada">NV</option>
+                            <option value="new hampshire">NH</option>
+                            <option value="new jersey">NJ</option>
+                            <option value="new mexico">NM</option>
+                            <option value="new york">NY</option>
+                            <option value="north carolina">NC</option>
+                            <option value="north dakota">ND</option>
+                            <option value="northern mariana islands">MP</option>
+                            <option value="ohio">OH</option>
+                            <option value="oklahoma">OK</option>
+                            <option value="oregon">OR</option>
+                            <option value="pennsylvania">PA</option>
+                            <option value="puerto rico">PR</option>
+                            <option value="rhode island">RI</option>
+                            <option value="south carolina">SC</option>
+                            <option value="south dakota">SD</option>
+                            <option value="tennessee">TN</option>
+                            <option value="texas">TX</option>
+                            <option value="trust territories">AZ</option>
+                            <option value="utah">UT</option>
+                            <option value="vermont">VT</option>
+                            <option value="virginia">VA</option>
+                            <option value="virgin islands">VI</option>
+                            <option value="washington">WA</option>
+                            <option value="west virginia">WV</option>
+                            <option value="wisconsin">WI</option>
+                            <option value="wyoming">WY</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="zipcode">Zipcode</label><br>
+                        <input type="text" id="zipcode" name="zipcode" required><br>
+
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="phone" required><br>
+                    </div>
+
+                    <div class="form-field">
+
+                        <label for="email">Email Address</label><br>
+                        <input type="text" id="email" name="email" style="width:300px;" required><br>
+
+                    </div>
+                    
+
+                </div>
+
+                
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="date">Event Date</label><br>
+                        <input type="date" id="date" name="date" required><br>
+
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="description">Describe Your Event</label><br>
+                        <textarea id="freeform" name="freeform" rows="4" cols="50">
+                        </textarea><br><br>
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <input class="form-button" type="submit" value="Submit">
+
+                    </div>
+
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+        <hr class="nav_hr_bottom">
+
+        <!-- about the author-->
+
+        <div class="bio_container">
+            <table class="bio_table" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="bio_td" span="2 columns">
+                        <h1 class="bio_h1_container">About Denise ...</h1>
+                        <p>Denise lives in New Orleans, Louisiana the birthplace of jazz and other 
+                            unique customs like Mardi Gras, Jazz Festivals, and Debutante balls. 
+                            Denise grew up in a large family of thirteen children. As a child she 
+                            used to entertain her siblings by reading and putting on plays. She began 
+                            writing poetry at an early age and then studied art. Her first magazine article 
+                            was published in 1982 in Black New Orleans magazine. Later she had articles 
+                            published in Essence Magazine and the New Orleans Tribune magazine.
+                        </p>
+                        <br>
+                        <button class="bio_button"><a href="about.html">Read more about Denise</a></button>
+    
+    
+                    </td>
+                    <td>
+                        <img src="css/images/denise-modified.png" alt="" class="bio_table_img">
+                    </td>
+                </tr>
+    
+            </table>
+
+        </div>
+
+       
+
+
+
+
+
+
+
+
+
+    </div>    
+
+    
+</body>
+</html>
